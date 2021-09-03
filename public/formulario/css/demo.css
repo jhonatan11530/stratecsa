@@ -1,0 +1,107 @@
+#Estado{
+
+	font-size:22px; 
+
+	font-weight:bold;
+
+}
+.sky-form fieldset.demo-enviar{
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    float: right;
+}
+.js-pasos{
+    text-align: right;
+    font: 13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
+    color: gray;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    margin-top: 0rem;
+}
+.js-pasos span{
+    margin: .4rem .2rem;
+    padding: 0rem 0.3rem;
+    color: gray;
+    font-weight: 100;
+}
+.js-pasos span.active{
+    background-color: #006fb6;
+    color: white;
+}
+
+.bg-azulC{
+    background-color: #F1F5F9 !important;
+}
+
+
+#bar {
+
+	width: 100%;
+	height: 120px;
+	top: 0;
+	z-index: 1000;
+	background:#F3F3F3;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+
+}
+
+html, body {
+
+	margin: 0;
+
+	padding: 0;
+
+	background-attachment: fixed;
+
+	background-position: 50% 50%;
+
+	background-size: cover;
+
+}
+.tab-uno{
+    padding-top:1rem;
+}
+
+
+
+.bg-blue {
+    background:#F3F3F3;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+	.body {
+		
+		padding: 10px;
+
+	}
+
+}
+
+#imgcargando{
+	margin:0 auto;
+	position: absolute;
+	top: 30%;
+	left: 38%;
+}
+
+#cargando{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #EDEDEE;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	opacity: 0.3;
+}
+
+#imagenuno, #imagendos, #imagentres, #imagencuatro, #imagencinco {
+    padding-left: 16% !important;
+}

@@ -1,0 +1,3051 @@
+/**
+
+* Template Name: Patron - Security Service Company HTML Template
+* Version: 1.0.3
+* Author: Unicoder
+* Email: unicoder16@gmail.com
+* Developed By: Unicoder
+* First Release: 2nd November, 2017
+* Author URL: www.unicoderbd.com
+
+**/
+
+/*===================================================
+Table of CSS Content arrage with every section name
+=====================================================
+1.	Default Section Style Start
+2.	Home Page-1
+4. 	Slider Section
+  4.1	Slider Animation css
+5.	Welcome Section
+6.	Our Service Section
+7.	Our Service Details Section
+8.	Popular Question Section
+9.	Photo Gallery Section
+10.	Testimonial Section
+11.	Achivement Section 
+12.	Latest News Section 
+13.	Blog Sidebar 
+14.	Blog Single 
+15.	Download Guide Section 
+16.	Footer Section
+17.	Footer Bottom Section 
+18.	Home Page-2
+  18.1	Slider-2
+  18.2	Welcome Patron-2
+19.	Our Service-2 
+20.	Why Choose Us-2 
+21.	Achivement-2 
+22.	Our Team 
+23.	Profile Details 
+24.	Our Testimonial-2 
+25.	Pricing 
+26.	Special Speech 
+27.	Get Your Choice 
+28.	Home Page-3
+  28.1	Why Choose Us-2
+29.	Specification 
+30.	Gallery-2 
+31.	Partners 
+32.	Banner 
+33.	Company Intro 
+34.	Our History
+35.	Pricing-2
+36.	Product Page Section Style Start
+37.	Single Product 
+38. Cart Page
+39.	Account
+40.	Our History
+41.	Service Values
+42.	Career
+43.	Application
+44.	Career
+45.	Application
+46.	Certification
+47.	Certification Single
+48.	FAQ
+49.	Testimonial
+50.	Quote
+51.	Help Center
+52.	General Support
+53.	Terms and Condition Page CSS
+54.	Support Article Detail Page CSS
+55.	How it Work
+56.	Working Experience
+57.	Pricing Extend
+58.	Contact
+59.	404 Page
+60.	Masonry Gallery
+===================================================== */
+
+@import url('animate.min.css');
+@import url('jquery.fancybox.css');
+@import url('owl.css');
+
+/*====== Link Google Fonts API ========*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+/*====================================================================
+
+/***====================================================================
+1.	Default Section Style Start
+====================================================================***/
+body {
+	color: #5a5a5a;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	overflow-x: hidden
+}
+* {
+	box-sizing: border-box
+}
+ul {
+	margin: 0;
+	padding: 0
+}
+li {
+	list-style-type: none
+}
+a {
+	text-decoration: none !important
+}
+img {
+	width: 100%;
+	border: none
+}
+.clear {
+	clear: both
+}
+.clearfix {
+ *zoom: 1
+}
+.flex-box{
+	display:flex
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	line-height: 0;
+	content: ""
+}
+.clearfix:after {
+	clear: both
+}
+.h1, .h2, .h3, .h4, h1, h2, h3, h4, .h5, .h6, h5, h6 {
+	font-family: "Oswald", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase
+}
+p {
+	font-family: "Open Sans", sans-serif
+}
+table {
+	width:100%
+}
+section {
+	padding: 70px 0;
+	width: 100%
+}
+.padding-70-0{
+	padding: 70px 0
+}
+textarea {
+	resize: none;
+	min-height: 100px
+}
+.full-row {
+	width: 100%;
+	position: relative
+}
+
+/*================= Color Setting css ========================*/
+.color-panel {
+	position: fixed;
+	right: -225px;
+	top: 150px;
+	z-index: 999;
+	-webkit-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out
+}
+.color-panel.open {
+	right: 0
+}
+.on-panel {
+	height: 45px;
+	left: -45px;
+	position: absolute;
+	top: 0;
+	width: 45px;
+	cursor: pointer
+}
+.on-panel img {
+	padding: 10px
+}
+.panel-box {
+  padding: 14px 10px 14px 20px;
+  width: 225px;
+  background: #f8f8f8
+}
+.panel-box .panel-title {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px
+}
+.color-box {
+	display: table;
+	width: 100%;
+	text-align: left
+}
+.color-box li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	cursor: pointer
+}
+.scroll-btn{
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	width: 35px;
+	height: 35px;
+	line-height: 33px;
+	text-align: center;
+	color: #fff;
+	z-index: 9
+}
+.color-panel {
+	background-color: #fff;
+}
+.color-box li.green {
+	background-color:#90c923
+}
+.color-box li.blue {
+	background-color:#44a9ff
+}
+.color-box li.red {
+	background-color:#fa5656
+}
+.color-box li.purple {
+	background-color:#9786ff
+}
+.color-box li.yellow {
+	background-color:#ffcc17
+}
+.color-box li.orange {
+	background-color:#ff9728
+}
+.color-box li.magento {
+	background-color:#ff4ab0
+}
+.color-box li.turquoise {
+	background-color:#0ab2a7
+}
+.color-box li.lemon {
+	background-color:#abe645
+}
+
+/*================= Button Default ========================*/
+.btn {
+	-moz-user-select: none;
+	border: 2px solid transparent;
+	display: inline-block;
+	border-radius:0px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 44px;
+	padding: 0 24px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.15s ease-in-out 0s;
+	vertical-align: middle;
+	white-space: nowrap
+}
+.btn-link {
+	font-weight: 600;
+	border-radius: 0
+}
+.btn-cart {
+  border: 1px solid transparent;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 34px;
+  padding: 0 18px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.15s ease-in-out 0s
+}
+.btn-stock .btn {
+  text-transform: capitalize;
+  height:24px;
+  line-height:22px;
+  padding:0 10px;
+  text-align:center;
+  font-size:11px;
+  font-weight:400
+}
+/*================= Social Icon Default ========================*/
+.social-icon i {
+	border: 2px solid transparent;
+  height: 40px;
+  line-height: 36px;
+  margin-right: 5px;
+  text-align: center;
+  width: 40px
+}
+/*================= Section Title ========================*/
+.section-title-area {
+	margin: 0 auto 55px;
+	text-align: center
+}
+.section-title{
+	position: relative
+	}
+.section-title::before{
+	bottom: -20px;
+	content: "";
+	height: 3px;
+	left: 50%;
+	position: absolute;
+	width: 50px
+}
+.section-title .title-tag {
+	display: table;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 auto 5px
+}
+.sub-title {
+	display: inline-block;
+	font-size:15px;
+	font-style: italic;
+	margin-top: 45px;
+	width: 60%
+}
+.section-title-area-left{
+	text-align:left
+}
+.section-title-area-left .title-tag{
+	margin:0 0 5px
+}
+.section-title-area-left .section-title::before{
+	left:0
+}
+.section-title-area-left .sub-title{
+	width:100%;
+	margin-bottom:30px
+}
+/*Inner Title*/
+.inner-title {
+	position: relative;
+	margin-bottom:30px;
+	display: inline-block;
+	width: 100%
+}
+.inner-title:before {
+	bottom: -12px;
+	content: "";
+	height: 3px;
+	position: absolute;
+	width: 50px
+	
+}
+/***====================================================================
+2.	Home Page-1
+====================================================================***/
+/*================= Top Header ================*/
+.header-top {
+	padding: 10px 0;
+	font-size: 13px
+}
+.top-left > span {
+	float: left;
+	margin-right: 30px
+}
+.top-left .language select {
+  -moz-appearance: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none
+}
+.top-right ul {
+	float: right;
+	margin-right: 0
+}
+.top-right ul li a {
+	display: inline-flex;
+	padding-left: 5px
+}
+.top-right ul li:before{
+	font-size:14px;
+	color: #fff
+}
+.margin-left-7{
+	margin-left: 7px
+}
+.top-right span.fa {
+  padding:5px 0 0 5px
+}
+/*-------Cart dropdown---------*/
+.cart-dropdown {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+	float: left;
+	font-size: 14px;
+	list-style: outside none none;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 63px;
+	z-index: 1000;
+	visibility: hidden;
+	opacity: 0;
+}
+.cart{
+	width: 300px;
+	padding: 15px;
+}
+.cart li {
+  display: flex;
+  height: auto;
+  padding: 10px;
+  margin: 3px 0
+}
+.cart li a {
+	width: 73%;
+	line-height: 20px
+}
+.top-right .cart li.cart-dropdown-button a {
+	color: #fff
+}
+.cart-dropdown li a{
+	display: inline-block !important
+}
+.cart-dropdown li a p {
+	font-size: 12px;
+	color: #BCBCBC
+}
+.cart-dropdown img {
+	background: #f5f5f5;
+	float: left;
+	margin-right: 10px;
+	width: 60px;
+	height: 60px;
+	border: 2px solid #f5f5f5
+}
+li.cart-dropdown-button a {
+	color: #fff;
+	font-size: 13px;
+	line-height: 40px;
+	margin: 0 10px;
+	padding: 0;
+	text-align: center
+}
+.cart-dropdown .remove {
+	cursor: pointer;
+	float: right
+}
+.total_amount {
+	text-align: right;
+	display: inline-block !important;
+	width: 100%;
+}
+/*---- Header Fixed CSS ----*/
+.header.fixed-header .header-top {
+    display: none
+}
+.header.fixed-header {
+    background-color: rgba(0, 0, 0, 1);
+	z-index: 999
+}
+.header {
+    animation-fill-mode: both;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+@keyframes menu_sticky {
+0% {
+    margin-top: -100px
+}
+50% {
+    margin-top: -90px
+}
+100% {
+    margin-top: 0
+}
+}
+@keyframes menu_sticky {
+0% {
+    margin-top: -100px
+}
+50% {
+    margin-top: -90px
+}
+100% {
+    margin-top: 0
+}
+}
+.header.fixed-header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2)
+}
+.header.fixed-header {
+  animation-duration: 1s;
+  animation-name: menu_sticky;
+  animation-timing-function: ease-out;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100
+}
+/*================= 
+3.	Main Nav 
+================*/
+.main-nav {
+    padding: 7px 0
+}
+.navbar-brand img {
+  width:175px
+}
+.navbar-nav li {
+  display: black;
+  position: relative
+}
+.navbar-nav li:last-child {
+  padding-right: 0px
+}
+.navbar-default .navbar-nav > li > a {
+    line-height: 57px;
+	font-weight:500;
+    text-transform:uppercase;
+	display: block;
+	font-size: 13px
+}
+.dropdown-menu li.dropdown a i {
+	float: right;
+	line-height: 24px
+}
+/*-------dropdown---------*/
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 220px;
+	font-size: 13px;
+	text-align: left;
+	display: none;
+	list-style: none
+}
+.navbar-nav .dropdown-menu > li > a{
+	display: block;
+	padding: 7px 20px;
+	clear: both;
+	line-height: 2;
+	font-weight: 500;
+	text-transform:uppercase;
+	color: #fff
+}
+.top-right ul.dropdown-menu {
+	padding: 10px 0;
+	background: #fff;
+	margin-top: 10px;
+	left: 20px;
+	min-width: 200px
+}
+.navbar-nav > li {
+	float: left;
+	color: #fff;
+	padding: 0 20px /* Edited */
+}
+/*-------Mega Menu annimation dropdown---------*/
+.navbar-default .navbar-nav li ul.mega-menu {
+	-moz-transition: all 300ms ease-in-out 0s;
+	-ms-transition: all 300ms ease-in-out 0s;
+	-o-transition: all 300ms ease-in-out 0s;
+	-webkit-transition: all 300ms ease-in-out 0s;
+	transition: all 300ms ease-in-out 0s
+}
+.navbar-default .navbar-nav li > ul.mega-menu {
+	visibility: hidden;
+	display: block;
+	opacity: 0;
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9)
+}
+.navbar-default .navbar-nav li:hover > ul.mega-menu {
+	visibility: visible;
+	opacity: 1;
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1)
+}
+.navbar-nav .mega-menu ul {
+	left: 100%;
+	top:0
+}
+/*-------Search Bar---------*/
+.search-bar {
+    position: relative;
+    margin-left: 30px
+}
+.search-bar li a {
+    color: #fff;
+    line-height: 57px
+}
+.search-form {
+    background: #fff none repeat scroll 0 0;
+    height: 50px;
+    padding: 0 20px;
+    position: absolute;
+    width: 300px;
+    z-index: -99;
+    top: 66px;
+	visibility: hidden;
+	opacity: 0;
+    right: 0
+}
+.search-form.visible{
+	animation-name:slideInRight;
+	animation-duration:0.3s;
+	top:66px;
+	visibility: visible;
+	opacity: 1
+}
+.header-search {
+    position: relative;
+}
+.header-search input {
+    width: 100%;
+    border: none;
+    line-height: 48px;
+	outline: none;
+	padding-right: 35px
+}
+.header-search > .src-close {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid;
+    cursor: pointer;
+    line-height: 12px;
+    padding: 5px 7px;
+    position: absolute;
+    right: -6px;
+    top: 23%;
+    z-index: 9999
+}
+/*===================== 
+4.	Slider Section 
+======================*/
+#slider {
+	padding: 0;
+	position: relative
+}
+.carousel-inner .item::before {
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+.carousel-caption {
+	left: inherit;
+	right: auto;
+	text-align: left;
+	width: 100%;
+	bottom: inherit;
+	top: 55%
+}
+.carousel-caption span {
+  display: table;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  text-transform: uppercase
+}
+.carousel-caption p {
+	font-size: 16px;
+	margin: 30px 0 0;
+	font-family: 'Montserrat', sans-serif
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 1 !important;
+    width: 60%;
+    padding-left: 0;
+    transform: translateX(-50%);
+    text-align: center
+}
+.slider-item .carousel-indicators li {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 3px
+}
+.slider-item .carousel-indicators .active {
+	width: 15px;
+	height: 15px;
+	margin: -2px 2px;
+	background: #fff;
+	border: 2px solid;
+	transition: all 300ms ease-in-out
+}
+.request-quote {
+  position: absolute;
+  right: 3%;
+  top: 50%
+}
+.quote-title {
+	display: inline-block;
+	padding: 25px 30px;
+	width: 100%
+}
+.quote-title p{
+	margin-bottom:0
+}
+.quote-form {
+	padding: 0 30px 30px
+}
+/*====================================================================
+4.1 Slider Animation css
+====================================================================*/
+
+.slider-item  .carousel-caption span {
+	-moz-animation-delay: 0.2s;
+	-ms-animation-delay: 0.2s;
+	-o-animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	visibility: hidden;
+	opacity: 0
+}
+.slider-item  .carousel-caption p {
+	-moz-animation-delay: 0.6s;
+	-ms-animation-delay: 0.6s;
+	-o-animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	visibility: hidden;
+	opacity: 0
+}
+.carousel-caption li:nth-child(1) {
+	-moz-animation-delay: 1s;
+	-ms-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s
+}
+.carousel-caption li:nth-child(2) {
+	animation-delay: 1.1s;
+	animation-duration: 1s
+}
+.carousel-caption li:nth-child(3) {
+	animation-delay: 1.2s;
+	animation-duration: 1s
+}
+.carousel-caption .btn-primary {
+	-moz-animation-delay: 1.5s;
+	-ms-animation-delay: 1.5s;
+	-o-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	visibility: hidden;
+	opacity: 0
+}
+.slider-item  .item.active .carousel-caption p, 
+.slider-item  .item.active .carousel-caption span, 
+.slider-item  .item.active .carousel-caption li:nth-child(1), 
+.slider-item  .item.active .carousel-caption li:nth-child(2), 
+.slider-item  .item.active .carousel-caption li:nth-child(3) {
+	animation-name: fadeInUp
+}
+.slider-item  .item.active .carousel-caption p, 
+.slider-item  .item.active .carousel-caption span, 
+.slider-item  .item.active .carousel-caption li:nth-child(1), 
+.slider-item  .item.active .carousel-caption li:nth-child(2), 
+.slider-item  .item.active .carousel-caption li:nth-child(3) {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	visibility: visible;
+	opacity: 1
+}
+.slider-item  .item.active .carousel-caption .btn-primary {
+	animation-name: fadeInUp
+}
+.slider-item  .item.active .carousel-caption .btn-primary {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	visibility: visible;
+	opacity: 1
+}
+/*===================== 
+5.	Welcome Section 
+======================*/
+.overflow-hidden {
+	overflow: hidden;
+	display: block
+}
+.thumb-title {
+	margin: 15px 0
+}
+.image-rotate{
+  overflow: hidden;
+  display: block
+}
+.image-rotate:hover img{
+	-webkit-transform: scale(1.2) rotate(7deg);
+	transform: scale(1.2) rotate(7deg)
+}
+.welcome-item {
+	margin-bottom: 30px
+}
+/*===================== 
+6.	Our Service Section 
+======================*/
+.service-item {
+	margin: 15px 0;
+	padding: 25px 20px
+}
+.service-item a {
+	display: block
+}
+.service-item{
+	width: 100%;
+	position: relative;
+	display: flex;
+	cursor: pointer;
+	z-index: 1
+}
+.service-item:before {
+	background: #fff
+}
+.service-item:before {
+	content:"";
+	position: absolute;
+	height: 100%;
+	width:0;
+	top:0;
+	left:0;
+	z-index: -1;
+	-webkit-transition: ease-out 0.4s;
+	-moz-transition: ease-out 0.4s;
+	transition: ease-out 0.4s
+}
+.service-item:hover::before {
+	width: 100%
+}
+.margin-top-100 {
+	margin-top: 100px
+}
+.no-padding {
+	padding: 0
+}
+.margin-top-20 {
+	margin-top: 20px
+}
+/*===================== 
+7.	Our Service Details Section 
+======================*/
+.service-list a {
+  display: table;
+  font-weight: 600;
+  margin-bottom: 3px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  width: 100%
+}
+.service-list .icon-item{
+	margin:-5px 15px 0 0
+}
+.special-service-item span {
+  border-radius: 50%;
+  display: inline-block;
+  height: 180px;
+  line-height: 200px;
+  margin: 0 auto;
+  width: 180px;
+  margin-bottom: 15px
+}
+.special-service-item [class^="flaticon-"]::before{
+	font-size:54px;
+	margin:0
+}
+/*===================== 
+8.	Popular Question Section 
+======================*/
+.according_area {
+  margin-bottom: 3px
+}
+.according_title::before {
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  width: 10px
+}
+.according_title {
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 44px;
+  overflow: hidden;
+  padding: 0 50px 0 15px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.according_title::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  width: 10px
+}
+.according_title i{
+  margin-right:7px
+}
+.according > div:first-child .according_details {
+  display: inline-block
+}
+.according_details {
+  display: none;
+  padding: 0 15px
+}
+.margin-top-30{
+	margin-top: 30px
+}
+/*===================== 
+9.	Photo Gallery Section 
+======================*/
+.background-1 {
+	background: rgba(0, 0, 0, 0) url("../images/gallery/bg.png") no-repeat fixed 0 0 / cover;
+	background-position: center center
+}
+.overlay-1::before {
+	bottom: 0;
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+.gallery-item {
+	position: relative;
+	margin: 15px 0;
+	display: block;
+	overflow: hidden
+}
+.masonry .gallery-item {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.gallery-item .overlay {
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%
+}
+.plus {
+	background-size: cover;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	opacity: 0;
+	text-align: center;
+}
+.gallery-item:hover .overlay .plus {
+	opacity: 1
+}
+.gallery-item img {
+   opacity:1;
+   transform:scale(1,1);
+   transition: all 0.2s ease-in
+}
+.gallery-item .traingle {
+   opacity:0;
+   overflow:visible;
+   border-color:rgba(3, 13, 38, 0.5) transparent transparent transparent;
+   border-style:solid;
+   border-width:180px;
+   width:100%;
+   height:100%;
+   transform:translateY(-125px)
+}
+.gallery-item a.info {
+   opacity:0;
+   transform:translateY(-125px);
+   transition: transform 0.3s ease-in, opacity 0.1s ease-in-out
+}
+.gallery-item:hover img {
+   opacity:0.8;
+   transform:scale(1.2,1.2) rotate(7deg)
+}
+.gallery-item:hover .overlay {
+   opacity: 1;
+   transform: translateY(0px)
+}
+.gallery-item:hover a.info {
+   opacity:1;
+   transform:translateY(100px)
+}
+/*===================== 
+10.	Testimonial Section 
+======================*/
+.testimonials-carousel.owl-carousel .feedback{
+  margin: 40px auto 0;
+  text-align: center;
+  width: 75%;
+  padding:0 40px
+}
+.testimonials-carousel.owl-carousel .owl-item img,
+.testimonials-carousels.owl-carousel .owl-item img {
+  border: 7px solid #f1f1f1;
+  border-radius: 50%;
+  display: table;
+  margin: 0px auto 30px;
+  width: 100px
+}
+.testimonials-carousels.owl-carousel .owl-item img {
+  margin: -30px auto 0px;
+  width: 80px
+}
+.testimonial-person-detail {
+  margin-bottom: 20px
+}
+.testimonial-person-detail .thumb-title{
+	margin-top:25px;
+	text-transform:capitalize
+}
+.testimonial-person-detail span{
+	text-transform:uppercase;
+	font-weight:500
+}
+.testimonials-carousel.owl-carousel .owl-controls .owl-dots{
+	display:block !important
+}
+.testimonials-carousel.owl-carousel .owl-controls .owl-nav{
+	display:none
+}
+/*===================== 
+11.	Achivement Section 
+======================*/
+.background-2{
+	background:url(../images/achivement/bg.png) no-repeat fixed 0 0 / cover;
+	background-position: center center
+}
+.achivement strong {
+  display: table;
+  font-family: "Oswald", sans-serif;
+  font-size: 34px;
+  margin:0 auto
+}
+.achivement > span {
+  font-size: 18px;
+  position:relative;
+  padding: 15px 0;
+  display: block
+}
+.achivement > span::after {
+  bottom: -20px;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  width: 50px
+}
+.achivment-caption {
+	width: 70%;
+	margin: 0 auto;
+	color: #fff
+}
+.banner-title {
+	line-height: 36px
+}
+.margin-top-50 {
+	margin-top: 50px
+}
+/*=====================
+12.	Latest News Section 
+======================*/
+.blog-item {
+  margin-bottom: 30px
+}
+.blog-text {
+  padding: 20px;
+  text-align: center
+}
+.blog-text a span {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 3px;
+  text-transform: uppercase
+}
+.blog-item .overlay {
+  bottom: -1px;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+.post-admin {
+	margin-bottom: 20px
+}
+.blog-item:hover .overlay .plus{
+	opacity:1
+}
+/*===================== 
+13.	Blog Sidebar 
+======================*/
+.blog-sidebar {
+  margin-top:10px
+}
+.padding-left-30{
+	padding-left:30px
+}
+.padding15{
+	padding:15px
+}
+.search-box .form-control{
+  border:none
+}
+.search-box > a {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 9px 15px 10px
+}
+.blog-sidebar .sidebar-widget .inner-title {
+  margin:0 0 45px
+}
+.blog-sidebar .sidebar-widget:last-child {
+  margin-bottom:0
+}
+.blog-category li {
+  padding-bottom: 15px
+}
+.blog-category li:last-child {
+  padding-bottom: 0
+}
+.blog-category li a {
+  font-weight: 500;
+  text-transform:uppercase
+}
+.archive li {
+  margin-bottom: 15px;
+  font-weight:500
+}
+.archive li:last-child{
+	margin-bottom:0
+}
+.recent-post ul li {
+  margin-bottom:20px
+}
+.recent-post ul li:last-child {
+  margin-bottom:0px
+}
+.recent-post ul li a {
+	font-weight: 600;
+	display:table
+}
+.recent-post ul li span {
+	font-size:13px;
+	font-weight: 500;
+	font-style:italic;
+	margin-right: 15px
+}
+.popular_tab li{
+	padding-right:5px
+}
+.popular_tab li a {
+	border: medium none;
+	border-radius: 0;
+	font-weight: 500;
+	height: 44px;
+	line-height: 44px;
+	padding: 0px 20px;
+	position: relative;
+	text-transform: uppercase
+}
+.popular_tab li a:before{
+	 content:"";
+	 position:absolute;
+	 width: 0; 
+	 height: 0; 
+	 border-left: 10px solid transparent; 
+	 border-right: 10px solid transparent; 
+	 border-top: 10px solid;
+	 top:43px;
+	 left:50%;
+	 display:none
+}
+.popular_tab li a:hover:before,
+.populer_comment .nav-tabs li.active a:before{
+ display:block
+}
+.tab-pane .post_area ul li span i{
+ padding-left:0px
+}
+.tab-pane .post_area{
+ padding-top:30px
+}
+.post_area ul li{
+ padding-bottom:20px
+}
+.post_area ul li:last-child{
+	padding-bottom:0
+}
+.post_area ul li a{
+ font-weight:500;
+ display:block
+}
+.post_area ul li span{
+ font-size:13px;
+ text-transform:capitalize;
+ padding-top:5px;
+ display:block;
+ font-style:italic;
+ font-weight:400
+}
+.post_area ul li span i{
+ padding-left:10px
+}
+.tags {
+  display: inline-block;
+  width: 100%
+}
+.tags a {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 4px 4px 0;
+  padding: 0px 20px;
+  font-weight:500
+}
+/*===================== 
+14.	Blog Single 
+======================*/
+.blog-detail .blog-item{
+	box-shadow:none
+}
+.blog-detail .blog-text{
+	text-align:left;
+	padding: 0px
+}
+.blog-detail .blog-text a span {
+  margin-left: 5px;
+  text-transform: inherit
+}
+.blog-detail .blog-text blockquote,
+.related-post .post span, .comment-detail > span {
+	font-style: italic
+}
+.blog-detail .blog-text blockquote {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 30px 0 30px 85px;
+  padding: 15px 25px
+}
+.tag-share {
+  display: table;
+  padding: 12px
+}
+.blog-detail .tag-share > span {
+  display: table-cell;
+  vertical-align: middle
+}
+.blog-detail .tag-share .btn-share i{
+  margin-right:7px
+}
+.blog-detail .tag-share .btn-share .btn-primary{
+  height:40px;
+  line-height:36px
+}
+.related-post .post {
+  float: left;
+  margin: 15px 0 25px 45px;
+  width: 40%
+}
+.related-post .post > a {
+  font-weight: 600;
+  display:table
+}
+.related-post .post span {
+  font-size: 13px;
+  font-weight: 500;
+  margin-right:15px
+}
+.comment-item > img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+  width: 80px
+}
+.comment-detail {
+  display: table
+}
+.comment-detail > span {
+  font-size: 13px;
+  margin: 5px 0
+}
+.margin-left-80 {
+  margin-left: 80px
+}
+.comment-item, .comment-detail > span {
+  display: inline-block
+}
+/*===================== 
+15.	Download Guide Section 
+======================*/
+.padding-40 {
+	padding:40px 0;
+}
+.get-tch p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height:48px;
+  text-transform: uppercase;
+  margin:0
+}
+.download-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%
+}
+.download-btn .btn-secondary{
+	margin:0px;
+}
+.no-margin {
+	margin: 0
+}
+/*===================== 
+16.	Footer Section 
+======================*/
+.footer-widget > img {
+	width: 150px;
+	margin: 10px 0
+}
+.widget-title {
+  line-height: 70px;
+  margin: 0
+}
+.footer-social-icon {
+	margin-top: 30px
+}
+.widget-content {
+  margin-top: 30px
+}
+.footer-widget .address li {
+  padding: 7px 0
+}
+.footer-widget ul li {
+  padding-bottom: 20px;
+  display: inline-flex
+}
+.footer-widget ul li a{
+	display: inline-block
+}
+.footer-widget ul li i {
+  margin: 6px 10px 6px 0
+}
+.footer-widget ul li span {
+  display: table
+}
+.tweet-content a {
+  font-style: italic
+}
+.widget-content form{
+  position: relative;
+  margin-top:30px
+}
+.footer-widget .form-group input {
+  height: 50px;
+  padding: 10px
+}
+.footer-widget form .btn-primary {
+  border: medium none;
+  font-weight: 600;
+  height: 50px;
+  margin:0;
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  top:0;
+  text-transform: uppercase
+}
+.footer-widget .social-icon li a i {
+  margin: 5px
+}
+.footer-widget .social-icon li a i:first-child{
+  margin-left: 0px
+}
+.bottom-nav {
+	text-align: left
+}
+/*===================== 
+17.	Footer Bottom Section 
+======================*/
+#footer-bottom {
+  height: 60px;
+  line-height: 59px
+}
+#footer-bottom{
+	text-align:center
+}
+#footer-bottom li{
+	display:inline-block
+}
+#footer-bottom li a {
+  text-transform:uppercase;
+  font-size:12px;
+  margin-right: 20px
+}
+#footer-bottom li:last-child a {
+	margin:0
+}
+.copyright span {
+  float: right;
+  font-size:12px;
+  line-height: 60px
+}
+/***====================================================================
+18.	Home Page-2
+====================================================================***/
+/*===================== 
+18.1	Slider-2 
+======================*/
+.carousel-indicators-2 .carousel-indicators {
+    left: auto;
+    right: 70px;
+    top: 50%;
+    width: 25px;
+    margin: 0;
+    transform: translateX(-50%)
+}
+.carousel-indicators-2 .carousel-indicators li {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 3px;
+	float: none
+}
+.carousel-indicators-2 .carousel-indicators .active {
+	width: 15px;
+	height: 15px;
+	margin: -2px;
+	background: #fff;
+	border: 2px solid;
+	transition: all 300ms ease-in-out
+}
+/*===================== 
+18.2	Welcome Patron-2 
+======================*/
+.request-quote-2{
+	position: absolute;
+	top: -188px
+}
+.quote-form .form-control {
+  background-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  box-shadow: none;
+  font-size: 14px;
+  height: 44px;
+  margin-top: 25px;
+  padding: 6px 0;
+  width: 100%
+}
+/*===================== 
+19.	Our Service-2 
+======================*/
+.service-left {
+  padding: 30px;
+  position: absolute;
+  margin-right: 15px;
+  top: -65px
+}
+.service-left::before {
+  border-color: transparent #c5c5c5 #c5c5c5 transparent;
+  border-style: solid;
+  border-width: 33px 15px 32px;
+  content: "";
+  left: -30px;
+  position: absolute;
+  top: 0
+}
+.padding-90 {
+  padding-top: 90px;
+  padding-bottom: 90px
+}
+/*===================== 
+20.	Why Choose Us-2 
+======================*/
+.text-right{
+	text-align: right
+}
+.text-left{
+	text-align: left
+}
+.margin-bottom-15{
+	margin-bottom: 15px
+}
+.margin-right-15{
+	margin-right: 15px
+}
+.margin-left-15{
+	margin-left: 15px
+}
+.why-us-text a{
+	display: block
+}
+/*===================== 
+21.	Achivement-2 
+======================*/
+.background-3{
+  background: rgba(0, 0, 0, 0) url("../images/achivement/1.png") no-repeat 0 0 / cover ;
+  background-position: center center
+}
+.achivement-2 .achivement {
+  background: rgba(0, 0, 0, 0) url("../images/achivement/border-img.png") no-repeat scroll 0 0 / cover ;
+  padding: 23px 0;
+  text-align: center;
+  height:133px
+}
+.achivement-2 .achivement > span{
+	padding:0
+}
+.achivement-2 .achivement > span::after{
+	display: none
+}
+/*===================== 
+22.	Our Team 
+======================*/
+.padding-15{
+	padding: 15px 0
+}																			
+.margin-top-30{
+	margin-top: 30px
+}
+.team-member .designation{
+	font-size:13px;
+	font-weight:500
+}
+.team-overlay, .team-overlay .team-title,
+.team-overlay p, .team-overlay .social-icon{ 
+	opacity:0
+}
+.team-overlay{
+	transition: all 0.3s ease-in 0.4s;
+	overflow: hidden;
+	padding:30px 20px;
+	text-align: center;
+	position:absolute;
+	top:0;
+	bottom:0;
+	cursor: pointer
+}
+.team-member:hover .team-overlay{  
+	opacity:1; 
+	transition-delay: 0s
+}
+.team-overlay .team-title,
+.team-overlay p{
+    transition: all 0.3s ease-in-out 0.2s;
+	-webkit-transition: all 0.3s ease-in-out 0.2s
+}
+.team-overlay:hover .team-title{
+	opacity: 1;
+	transition-delay: 0.1s
+}
+.team-member:hover p,
+.team-member:hover .social-icon  { 
+	opacity:1;
+	transition-delay: 0.2s
+}
+.team-overlay .social-icon {
+	transition: all 0.3s ease-in-out 0.1s;
+	-webkit-transition: all 0.3s ease-in-out 0.1s
+}
+/*===================== 
+23.	Profile Details 
+======================*/
+.profile-details-img .social-icon {
+  height: 100px;
+  line-height: 100px;
+  margin-top: 7px
+}
+.profile-name span {
+  display: block;
+  margin-bottom: 5px
+}
+.personal-info li {
+  font-weight: 600;
+  padding:14px 15px
+}
+.personal-info span {
+  float: right;
+  font-family: "Open Sans", sans-serif
+}
+/*===================== 
+24.	Our Testimonial-2 
+======================*/
+.padding20{
+	padding: 20px
+}
+.margin-30{
+	margin: 30px 0
+}
+.background-4 {
+  background: rgba(0, 0, 0, 0) url("../images/testimonial/bg.png") no-repeat fixed 0 0 / cover;
+  background-position: center center
+}
+.testimonials-carousels img {
+  left: 50%;
+  position: absolute;
+  top: 0
+}
+.testimonials-carousels .testimonial-person-detail {
+  display: inline-block
+}
+.testimonials-carousels .feedback .thank {
+  font-weight: 500;
+  display: block
+}
+/*===================== 
+25.	Pricing 
+======================*/
+.padding-30{
+	padding: 30px 0
+}
+.padding-bottom-30{
+	padding-bottom: 30px
+}
+.month-rate {
+  font-weight: 600
+}
+.month-rate span {
+  font-size: 24px
+}
+.price-list li {
+  padding: 8px 0
+}
+.price-list li:last-child {
+  border-bottom: none;
+}
+/*===================== 
+26.	Special Speech 
+======================*/
+.background-5 {
+  background:rgba(0, 0, 0, 0) url("../images/special-speech/1.png") no-repeat fixed 0 0 / cover ;
+  background-position: center center;
+  font-weight: 500
+}
+.overlay-2::before {
+	bottom: 0;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%
+}
+.special-speech-sub-title {
+  font-size: 18px;
+  font-weight: 500
+}
+/*===================== 
+27.	Get Your Choice 
+======================*/
+.padding30{
+	padding:30px
+}
+.get-process{
+	margin:0 -15px
+}
+/***====================================================================
+28.	Home Page-3
+====================================================================***/
+#header-3 .header-top{
+	display: none
+}
+/*===================== 
+28.1  Why Choose Us-2 
+======================*/
+.padding-top-30{
+	padding-top: 30px
+}
+.why-choose-img.overflow-hidden {
+	border-radius: 50%;
+	width: 100%;
+	display: table;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 20px;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+.why-choose-img.overflow-hidden img {
+	width: 55%
+}
+/* progress-bar */
+.prgs-bar > span {
+  font-weight: 600;
+  text-transform: uppercase
+}
+.skill-progress .progress {
+  margin: 5px 0 35px;
+}
+.skill-percent {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: -25px
+}
+.skill-percent {
+  font-weight: bold
+}
+.progress-bar {
+  transition: all 3000ms ease 0s;
+  width: 0
+}
+/*===================== 
+29.	Specification 
+======================*/
+.specification-item span{
+  display: table;
+  margin:0 auto 40px;
+  font-size:16px
+}
+.white-line {
+  height: 2px;
+  left: 54%;
+  position: absolute;
+  top: 3%;
+  width: 100%
+}
+.specification-item i {
+  font-size:40px
+}
+/*===================== 
+30.	Gallery-2 
+======================*/
+.gallery-text {
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+.overlay .gallery_title::before, 
+.overlay .gallery_title::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 30px;
+  top: 11px
+}
+.overlay .gallery_title::before{
+  left: -40px
+}
+.overlay .gallery_title::after {
+  right: -40px
+}
+.gallery-item .overlay .gallery_title {
+	opacity:1
+}
+.overlay [class^="flaticon-"]::before,
+.overlay [class^="flaticon-"]::after{
+	font-size: 36px
+}
+/*===================== 
+31.	Partners 
+======================*/
+.partner-slider .owl-controls {
+  display: none !important;
+  margin: 0;
+  width: 100%;
+  z-index: 1
+}
+/***====================================================================
+	About Us
+====================================================================***/
+/*===================== 
+32.	Banner 
+======================*/
+#banner {
+  background: rgba(0, 0, 0, 0) url("../images/banner/banner.png") no-repeat fixed center center / cover ;
+  padding: 120px 0 0;
+  position: relative
+}
+#banner:before {
+	position:absolute;
+	content:"";
+	top:0;
+	bottom:0;
+	width:100%
+}
+.banner-content {
+  display: inline-block;
+  padding: 60px 0;
+  width: 100%;
+  position:relative
+}
+.page-titile {
+   float: left;
+   margin: 0;
+   line-height: 70px;
+}
+.banner-nav {
+  margin: 24px 0
+}
+.banner-nav li {
+  float: left;
+  font-size: 13px;
+  font-style:italic;
+  padding-left: 5px
+}
+
+/*===================== 
+33.	Company Intro 
+======================*/
+.about-video{
+	width: 100%;
+    height: 350px;
+    background: url(../images/about-us/1.png);
+    background-size: cover;
+    position: relative
+}
+.about-video span {
+  position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+.YouTubePopUp-Wrap {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999
+}
+.YouTubePopUp-Content {
+  background: rgba(0, 0, 0, 0) url("../images/fancybox/fancybox_loading.gif") no-repeat scroll center center;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 680px;
+  position: relative
+}
+.YouTubePopUp-Content iframe {
+  border: medium none;
+  bottom: 0;
+  display: block;
+  height: 480px;
+  margin: auto 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+.about-video [class^="flaticon-"]::before{
+	font-size:80px;
+	margin:0
+}
+/*===================== 
+34.	Our History 
+======================*/
+.history-detail, .box-shadow {
+  box-shadow: 0 1px 10px #eee
+}
+.history-list li {
+  margin-left: 40px;
+  padding-bottom: 5px;
+  position: relative
+}
+.history-list li::before {
+  content: "";
+  font-family: "FontAwesome";
+  left: -36px;
+  position: absolute;
+  top: 5px
+}
+.history-list li::after {
+  content: "";
+  height: 155px;
+  left: -31px;
+  position: absolute;
+  top: 26px;
+  width: 2px
+}
+.history-list li span{
+	font-size:18px;
+	font-weight:bold
+}
+.history-list li .thumb-title{
+	text-transform:capitalize
+}
+.history-list li p a {
+	font-style:italic
+}
+/***====================================================================
+35.	Pricing-2
+====================================================================***/
+.pricing-item {
+	height: 570px;
+	position: relative
+}
+.margin-bottom-30{
+	margin-bottom: 30px
+}
+.pricing-nav li{
+	display: inline-block;
+	margin: 2px 0
+}
+.pricing-nav li a{
+	height: 44px;
+	line-height: 44px;
+	padding: 0 25px;
+	display: block
+}
+.pricing-item .btn-secondary {
+	position: absolute;
+	left: 50%;
+	bottom: 30px
+}
+/***====================================================================
+36.	Product Page Section Style Start
+====================================================================***/
+.product-list > li {
+  padding: 10px 0
+}
+.product-list li a i{
+	padding-right:7px
+}
+.sub-category {
+  margin-left: 30px
+}
+.sub-category > li {
+  padding: 8px 0
+}
+.sub-category > li:last-child {
+  padding-bottom: 0
+}
+#pricing-range {
+  height: 3px;
+  margin: 20px 0
+}
+.filter-range {
+  height: 100%;
+  width: 65%;
+  position:relative
+}
+.filter-range::before, .filter-range::after {
+  border-radius: 50%;
+  content: "";
+  height: 15px;
+  position: absolute;
+  top: -6px;
+  width: 15px;
+  -webkit-box-shadow: 1px 1px 0 1px rgba(0,0,0,.1);
+  box-shadow: 1px 1px 0 1px rgba(0,0,0,.1)
+}
+.filter-range::before{
+	left:0
+}
+ .filter-range::after{
+  right: 0
+}
+.shop-filter .filter {
+  display: inline-block;
+  padding: 0 20px 20px;
+  width: 100%
+}
+.ad-banner::before {
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+.ad-banner .banner-detail {
+  padding: 20px 38px 20px 20px;
+  position: absolute;
+  bottom: 0
+}
+.banner-detail a {
+  line-height: 44px
+}
+.latest-product ul li {
+  display: inline-flex;
+  margin-top: 15px;
+  width: 100%
+}
+.slide-arrow > a {
+  margin-right: 10px
+}
+.latest-product ul li h6 {
+  font-family: "Montserrat",sans-serif;
+  font-size: 13px;
+  margin-top: 0;
+  text-transform: capitalize
+}
+.post-img img {
+  margin: 0 15px;
+  width: 70px
+}
+.rating {
+  font-size:12px
+}
+.product-top-tool {
+  display: table;
+  height: 50px;
+  padding: 10px;
+  width: 100%
+}
+.view-type, .show-item {
+  margin-top: 3px
+}
+.product-top-tool label{
+	float:left;
+	margin:0 10px 0 0;
+	color:#1a1a1a
+}
+.product-top-tool select {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none
+}
+.product-top-tool .view-category li{
+	float: left;
+    margin-left: 5px
+}
+.product-top-tool .view-category li a {
+  display: table-cell;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px
+}
+.product-item{
+	display:inline-block;
+	width:100%
+}
+.product-img {
+  position:relative
+}
+.product-detail .product-name {
+  display: inline-block;
+  font-weight: 500;
+  width: 100%;
+  margin-top:0px
+}
+.product-item .price {
+  display:inline-block;
+  font-weight: 500;
+  width: 60%
+}
+.product-item .price > span {
+  font-size: 12px;
+  margin-right: 7px;
+  text-decoration: line-through
+}
+.discount {
+  font-weight: 500;
+  height: 35px;
+  left: 10px;
+  line-height: 35px;
+  padding: 0 10px;
+  position: absolute;
+  font-size:12px;
+  text-transform: uppercase;
+  top: 10px
+}
+/*Product List*/
+.all-product-list .product-item {
+  padding: 12px
+}
+.all-product-list .product-img {
+  float: left;
+  width: 32%
+}
+.all-product-list .product-detail {
+  display: table;
+  padding: 0px 30px;
+  width: 68%;
+  border:none
+}
+.all-product-list .product-item .price{
+	margin:10px 0
+}
+.all-product-list .rating > span {
+  margin-left: 7px
+}
+.product-detail > p {
+  margin: 8px 0
+}
+.btn-stock > span {
+  font-size: 12px;
+  margin-left: 5px
+}
+/*===================== 
+37.	Single Product 
+======================*/
+.product-info .product-detail{
+	border:none
+}
+.preview-gallery {
+  float: left
+}
+.preview-gallery img {
+  margin: 10px 0;
+  width: 80px;
+  display:table
+}
+.preview-gallery img:first-child{
+	margin-top:0
+}
+.rating > span {
+  font-weight: 500;
+  margin-left:10px
+}
+.product-code {
+  border-bottom: 1px solid
+}
+.product-detail .brand {
+  float: left
+}
+.product-color label {
+  float: left;
+  margin: -3px 10px 0 0;
+}
+.product-color li {
+  display: inline
+}
+.product-color li a{
+  display: inline-block;
+  height: 20px;
+  width: 20px
+}
+.product-quantity > label {
+  float: left;
+  margin-right:10px;
+  margin-top:3px
+}
+.product-quantity span {
+  display: table-cell;
+  height: 35px;
+  margin-right:35px;
+  vertical-align: middle;
+  width: 35px
+}
+.product-quantity .form-control {
+  font-size: 12px;
+  height: 35px;
+  margin: 0 5px;
+  padding: 3px;
+  text-align: center;
+  width: 35px
+}
+.product-quantity > p {
+  font-family: montserrat;
+  font-weight: 500;
+  margin: 4px 15px
+}
+.product-share .social-icon > li {
+  display: inline-block;
+  margin: 10px 0 0
+}
+.btn-product {
+  margin: 15px 0
+}
+.btn-product .btn-primary {
+  float: left;
+  font-size: 11px;
+  font-weight: 400;
+  height: 31px;
+  line-height: 28px;
+  margin: 0 10px 0 0;
+  padding: 0 18px
+}
+.product-info-tab .nav-tabs a {
+  border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 3px 0 0;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 25px;
+  text-transform: uppercase
+}
+.product-info-tab .tab-content li {
+  display: inline-flex;
+  margin: 5px 0
+}
+.product-info-tab .tab-content li i {
+  margin: 5px 15px 0 0
+}
+.technical-specification thead {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: table-caption
+}
+.technical-specification th {
+  padding: 15px 0 15px 20px
+}
+.technical-specification td {
+  padding: 4px 0 4px 20px;
+  border:1px solid
+}
+/***====================================================================
+38.	Cart
+====================================================================***/
+.shopping-cart-table thead{
+	text-transform:uppercase
+}
+.shopping-cart-table thead tr th{
+  margin-bottom: 15px
+}
+.product-thumbnail {
+  width: 175px
+}
+.product-thumbnail img{
+  margin: 12px
+}
+.product-information {
+  width: 250px
+}
+.product-information a {
+  display: table;
+  font-weight: 500
+}
+.product-price {
+  text-align: center;
+  width: 150px
+}
+.product-qty .quantity input {
+  display: table;
+  height: 44px;
+  margin: 2px auto;
+  width: 44px;
+  text-align:center
+}
+.product-qty .bg-gray{
+  border: medium none
+}
+.product-price .old-price {
+  display: table;
+  margin: 0 auto;
+  text-decoration: line-through
+}
+.variation-Color .color {
+  border: 1px solid;
+  display: inline-block;
+  height: 18px;
+  margin: -5px 3px;
+  width: 18px
+}
+.product-info a i.fa {
+  font-size: 16px;
+  margin-top:7px
+}
+.product-subtotal, .product-qty {
+  width: 100px;
+  font-size:16px;
+  font-weight:500
+}
+.product-remove {
+  width: 42px
+}
+.coupon #coupon-code {
+  border: 2px solid transparent;
+  border-radius: 0;
+  height: 48px;
+  text-transform: uppercase;
+  font-weight: 500;
+  float:left
+}
+.coupon .btn-secondary {
+  margin: 30px 0 0 -2px
+}
+.margin-top-40 {
+  margin-top: 40px
+}
+.cart-totals table tr td {
+  padding: 10px 15px
+}
+.cart-totals td span{
+	float:right
+}
+.order-total > td {
+  font-weight: 600;
+  text-transform: uppercase
+}
+.order-total span {
+  font-size: 21px
+}
+/***====================================================================
+39.	Account
+====================================================================***/
+.padding-70{
+	padding: 70px 15px
+}
+.sign-form::before {
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 25%
+}
+.sign-up p, .sign-in p{
+  width: 58%
+}
+.sign-up-form .form-control {
+  border: medium none;
+  box-shadow: none;
+  width: 570px;
+  margin: 7px 0
+}
+.sign-up a.active::before, .sign-in a.active::before {
+  border-radius: 50%;
+  content: "";
+  height: 30px;
+  position: absolute;
+  right: -14px;
+  width: 30px
+}
+.sign-up-form {
+  display:table;
+  margin: 0 auto;
+  width: 70%
+}
+.sign-up-form #checkbox1{
+	margin-right:7px
+}
+.sign-up-form label{
+	font-weight:normal
+}
+.sign-up-form .alt-link {
+  display: inline-block;
+  text-transform:uppercase;
+  font-weight:600
+}
+/***====================================================================
+40.	Our History
+====================================================================***/
+.about-category-nav li {
+  margin-bottom: 5px;
+  overflow: hidden
+}
+.about-category-nav li a{
+  display: inline-block;
+  font-weight: 500;
+  line-height: 50px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  width: 100%;
+  position: relative;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0
+}
+  .about-category-nav li a::after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1
+ } 
+.about-category-nav li a:hover::after{
+    transform: translate(0, 0)
+ }  
+.about-category-nav li a:hover{
+    color: indigo;
+    transform: scale(1.05);
+    will-change: transform
+}
+.sidebar-widget button {
+  line-height: 50px;
+  margin: 2px 0;
+  text-align: left;
+  width: 100%
+}
+.sidebar-widget [class^="flaticon-"]::before{
+	font-size:16px;
+	margin-right:7px;
+	margin-left:0
+}
+.info-pages .btn-link {
+  display: table
+}
+.info-pages ul li::after{
+	height:145px !important
+}
+/***====================================================================
+41.	Service Values
+====================================================================***/
+.box-list {
+  margin-left: 50px
+}
+.box-list li {
+	position:relative;
+	margin:10px 0;
+	font-family: "Open Sans", sans-serif
+}
+.box-list li::before {
+  content: "";
+  height: 9px;
+  left: -30px;
+  position: absolute;
+  top: 9px;
+  width: 9px
+}
+.all-packages {
+  display: inline-block
+}
+.package-values{
+	width:34%;
+	float:left
+}
+.package-values li {
+  border-bottom: 1px solid;
+  padding: 20px
+}
+.package-values li:last-child{
+	height:80px
+}
+.package-values li:first-child, .package-values-item li ul {
+  height: 150px
+}
+.package-values li .thumb-title {
+  display: table-cell;
+  height: 110px;
+  vertical-align: middle
+}
+.package-values li i.fa {
+  margin-right: 15px 
+}
+.package-values-item {
+  border: 1px solid #fff;
+  border-top:none;
+  border-right:none;
+  float: left;
+  width: 16.5%
+}
+.package-values-item li ul li .thumb-title{
+	margin-top:0
+}
+.package-rate {
+  font-family: "Oswald",sans-serif;
+  font-size: 21px;
+  font-weight: bold
+}
+.package-values-item li ul li {
+  padding: 13px;
+  border-top: none
+}
+.package-values-item li ul li {
+  padding: 13px;
+  border-bottom:1px solid #fff
+}
+.package-values-item li ul li:last-child {
+  padding: 13px;
+  border-bottom:none
+}
+.package-values-item li {
+  padding: 20px 0
+}
+.package-values-item > li:first-child{
+	padding:0
+}
+.package-values-item li:last-child{
+  height:88px
+}
+.package-values-item:hover li a.btn{
+	border:2px solid
+}
+.package-values-item li:last-child a.btn{
+	height:40px;
+	padding:0 15px;
+	line-height:36px
+}
+.value-bottom-text p {
+  width: 85%;
+  margin: 0 auto
+}
+/***====================================================================
+42.	Career
+====================================================================***/
+.info-pages .according_details p, 
+.info-pages .according_details ul{
+	margin:0 0 20px 0
+}
+.info-pages .according_details span{
+	display:table;
+	font-weight:500
+}
+.info-pages .according_details ul li{
+	list-style:number inside;
+	font-family: "Open Sans", sans-serif
+}
+/***====================================================================
+43.	Application
+====================================================================***/
+.brochure-info .btn-secondary [class^="flaticon-"]:before {
+    font-size: 18px;
+    line-height: 45px;
+    padding-right: 9px
+}
+.brochure-info .btn-secondary {
+    width: 100%
+}
+.brochure-info .btn-secondary:last-child{
+	margin-top:7px
+}
+/***====================================================================
+44.	Career
+====================================================================***/
+.application-form .apply-form textarea{
+	height:230px !important
+}
+.application-form .apply-form .attatchment{
+	margin-top:30px;
+	height:44px
+}
+/***====================================================================
+45.	Application
+====================================================================***/
+.responsibilities li {
+  list-style: outside none decimal;
+  margin-left: 15px;
+  font-family: "Open Sans", sans-serif
+}
+/***====================================================================
+46.	Certification
+====================================================================***/
+.info-pages .item img {
+  width: 270px
+}
+/*================
+47.	Certification Single
+=======================*/
+.certification-item-list-detail .certification-detail-img {
+  background: rgba(0, 0, 0, 0) url("../images/awards/award-single/1.png") no-repeat scroll 0 0 / cover ;
+  display: inline-block;
+  height: 400px;
+  margin: 40px 0 20px;
+  width: 100%;
+  position: relative
+}
+.certification-item-list-detail .banner-title {
+  left: 50%;
+  position: absolute;
+  top: 24%
+}
+.certification-details > span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0
+}
+/***====================================================================
+48.	FAQ
+====================================================================***/
+.search_question {
+  border: medium none;
+  font-size: 14px;
+  font-weight: 400;
+  height: 50px;
+  padding: 0 20px;
+  width: 100%
+}
+.search_icon {
+  background-color: transparent;
+  border: medium none;
+  position: absolute;
+  right: 5px;
+  top: 15px
+}
+.info-pages .search_icon {
+  right: 20px;
+  top: 12px
+}
+.info-pages .inner-title{
+	margin-top: 0
+}
+/***====================================================================
+49.	Testimonial
+====================================================================***/
+.info-pages .testimonials img{
+	width:80px !important;
+	border-radius:50%
+}
+.info-pages .testimonial-person-detail {
+  display: table;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+  width: 75%
+}
+.info-pages .testimonial-person-detail .thumb-title{
+	margin-top:0px
+}
+.info-pages .blog_pagination{
+	text-align:center;
+	margin-top:30px
+}
+/***====================================================================
+50.	Quote
+====================================================================***/
+.quote_working_system p{
+	margin-top: 20px
+}
+.quote_working_system ul li{
+	position: relative;
+	padding-left: 20px
+}
+.quote_working_system ul li:before{
+	content: "\f046";  
+    font-family: FontAwesome;
+    left:0;
+    position:absolute;
+    top:0
+}
+.service_quote_form select{
+	padding: 12px 20px;
+	width: 100%;
+	border: none
+}
+.service_quote_form input[type="checkbox"]{
+	margin-right: 20px	
+}
+.service_quote_form li{
+	float: left;
+	width: 50%
+}
+.service_quote_form li label{
+	font-weight:normal;
+	cursor:pointer
+}
+.service_quote_form textarea{
+	width: 100%;
+	border: 1px solid;
+	padding: 12px 20px;
+	height:200px
+}
+.service_quote_form .form-group{
+	position: relative
+}
+.service_quote_form .form-group a{
+	position: absolute;
+	right: 15px;
+	top: 50%
+}
+/***====================================================================
+51.	Help Center
+====================================================================***/
+.search-problem .form-control{
+	border:none;
+	height:48px
+}
+.search-problem .btn-primary{
+	margin:0
+}
+.help-item [class^="flaticon-"]::before{
+	font-size:80px
+}
+.help-item {
+  padding: 40px
+}
+.line{
+	width:30px;
+	height:3px;
+	display:block;
+	margin:30px auto
+}
+#live-chat {
+  background: rgba(0, 0, 0, 0) url("../images/banner/help-banner.png") no-repeat scroll right center / cover ;
+}
+.btn-live-chat .btn-secondary{
+	margin-top:0
+}
+.btn-live-chat .btn-secondary {
+  font-size: 21px;
+  height: 64px;
+  line-height: 64px;
+  margin-top: 0
+}
+.btn-live-chat [class^="flaticon-"]::before{
+	font-size:36px
+}
+/***====================================================================
+52.	General Support
+====================================================================***/
+.support-list li a {
+  border-bottom: 1px solid;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 30px;
+  text-transform: uppercase
+}
+.support-list li a [class^="flaticon-"]::before{
+	font-size:20px
+}
+.support-list li:last-child a {
+	border:1px solid transparent
+}
+.margin-right-10{
+  margin-right:10px
+}
+.support-article {
+  border-top: 3px solid
+}
+.support-article .thumb-title{
+	margin-top:0
+}
+/***====================================================================
+53.	Terms and Condition Page CSS
+====================================================================***/
+.condition_details .time{
+	font-weight: 600
+}
+/***====================================================================
+54.	Support Article Detail Page CSS
+====================================================================***/
+.article-list li a {
+	font-weight: 600;
+	font-family: "Open Sans", sans-serif
+}
+.article-list li{
+	margin-bottom: 20px;
+	list-style:decimal inside
+}
+.agreement-list {
+  font-family: "Open Sans", sans-serif;
+}
+.agreement-list li{
+	margin:7px 0;
+	display: flex
+}
+.agreement-list li i.fa {
+  margin: 6px 15px 0 0
+}
+.agreement-list span {
+  display: table
+}
+/***====================================================================
+55.	How it Work
+====================================================================***/
+.background-6{
+	background:rgba(0, 0, 0, 0) url("../images/how-it-work/2.png") no-repeat scroll 30% center / cover
+}
+.how-work .sub-title{
+	font-size:14px
+}
+.guaranty-safety-right {
+  border: 2px solid;
+  border-radius: 50%;
+  display: inline-block;
+  height: 350px;
+  width: 350px;
+  position:relative;
+  left:50%
+}
+.guaranty-safety-right > img {
+  left: 50%;
+  position: absolute;
+  top: 55%;
+  width: 120px
+}
+.btn-safety{
+	border:2px solid;
+	width:124px;
+	padding:0
+}
+.btn-safety-top, .btn-safety-right, .btn-safety-bottom, .btn-safety-left {
+  position: absolute
+}
+.btn-safety-top {
+  left: 50%;
+  top: -15px
+}
+.btn-safety-right {
+  right: -118px;
+  top: 43%
+}
+.btn-safety-bottom {
+  left: 50%;
+  bottom: -15px
+}
+.btn-safety-left {
+  left: 3px;
+  top: 43%
+}
+/***====================================================================
+56.	Working Experience
+====================================================================***/
+.working-experience-items::before {
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  width: 2px
+}
+.experience-content-right h6::before, 
+.experience-content-left h6:before {
+  border: 2px solid;
+  border-radius: 50%;
+  content: "";
+  height: 12px;
+  position: absolute;
+  width: 12px
+}
+.experience-content-right h6::before{
+	left: -6px
+}
+.experience-content-left h6:before {
+	right:-6px
+}
+.btn-experience-left{
+	margin:12px 45px 0 0;
+	position: relative
+}
+.btn-experience-left .btn-primary::before, 
+.btn-experience-right .btn-primary::before{
+  content: "";
+  position: absolute;
+  border-top: 12px solid;
+  top: 0
+}
+.btn-experience-left .btn-primary::before{
+  right: -35px;
+  border-right: 35px solid transparent
+}
+.btn-experience-right {
+  margin: 14px 0 0 45px
+}
+.btn-experience-right .btn-primary::before {
+  border-left: 35px solid transparent;
+  left: -35px
+}
+.experience-duration .duration {
+  font-size: 16px;
+  font-weight: bold
+}
+/***====================================================================
+57.	Pricing Extend
+====================================================================***/
+.service-measurement, .additional-security{
+	margin:30px 0 10px 0;
+	display:block
+}
+.single-select label{
+	font-weight:normal
+}
+/*----- Input Radio Switch ----*/
+.radio_check {
+    border-radius: 22px;
+    display: block;
+    height: 44px;
+    width: 90px;
+	position: relative;
+	overflow: hidden
+}
+.radio_check input[type="checkbox"]{
+	display: none
+}
+.radio_check label {
+	padding:0 15px;
+	transform: translateX(0px);
+	width: 135px;
+	cursor: pointer;
+	max-width: inherit
+}
+.radio_check input[type="checkbox"]:checked + label{
+	background: #fb9d5b;
+	color: #fff;
+	transform:translateX(-44px)
+}
+.radio_check input[type="checkbox"]:checked + label:before{
+	background: #fff
+}
+.radio_check label span {
+	line-height: 44px
+}
+.radio_check label span:first-child {
+	float:left
+}
+.radio_check label span:last-child {
+	float:right
+}
+.radio_check label::before {
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  content: "";
+  height: 34px;
+  left: 50px;
+  position: absolute;
+  top: 5px;
+  width: 34px;
+  z-index: 1
+}
+/*----- Input Radio Switch ----*/
+.additional-features input[type="checkbox"]{
+	display: none
+}
+.additional-features label {
+  border-radius: 35px;
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  margin: 0 10px 10px 0;
+  padding: 0 25px;
+  cursor: pointer
+}
+.total-cost {
+  display: inline-block
+}
+.total-amount > span {
+  display: inline-block;
+  height:70px;
+  line-height:70px;
+  padding: 0 35px;
+  font-weight: 500;
+  font-size: 24px
+}
+.message-box.form-control{
+	height: 220px
+}
+/***====================================================================
+58.	Contact
+====================================================================***/
+.contact-us span{
+	font-style: italic;
+	display: block
+}
+.contact-detail .sub-title {
+	font-size:14px;
+	font-weight:normal;
+	width: 100%;
+	text-transform: capitalize
+}
+.error-handel {
+  bottom: -30px;
+  display: table;
+  height: 35px;
+  left: 15px;
+  margin: auto 0;
+  position: absolute;
+  text-align: left;
+  width: 100%
+}
+#success, #error {
+  display: none;
+  line-height: 34px
+}
+#success {
+	color: #31bb15
+}
+.contact-detail > span {
+  display: inline-block;
+  font-weight: 600;
+  margin: 10px 0;
+  text-transform: uppercase
+}
+.contact_message textarea{
+	height: 200px
+}
+.contact-detail {
+	height: 100%;
+	position: relative
+}
+#map {
+	width: 100%;
+	height: 500px
+}
+.contact_message .error {
+	font-weight: 300;
+	font-size: 13px;
+	color: #f00
+}
+/***====================================================================
+59.	404
+====================================================================***/
+.error-page span.color-default{
+	font-size:55px
+}
+.error-page p {
+  display: table;
+  margin: 30px auto 0;
+  width: 46%
+}
+/***====================================================================
+60.	Masonry Gallery
+=====================================================================***/
+.masonry li {
+	float: left;
+	display: flex
+}
+

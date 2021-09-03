@@ -1,0 +1,51 @@
+.table-responsive-principal{
+	margin: auto;
+	box-shadow: 0px 0px 1px 1px #B4B4B4;
+}
+
+.table-responsive-principaltr td{
+	table-layout: fixed;
+	text-align: center;
+	color:#6C6767;
+	font-size: 80%;
+}
+.icon-delete{
+	width: 15px;
+	height: 15px;
+	
+}
+#ServiciosRegistrados{
+	border-top-left-radius:3px; 
+	border-top-right-radius: 3px;
+}
+#btn-delete{
+	
+	border-radius: 50%;
+	border: 2px solid #138FEE;
+}
+@media screen and (max-width: 360px){
+
+	.table-responsive-principal, .table-responsive-principal tr,.table-responsive-principal td,.table-responsive-principal tbody{
+		display: block;
+		
+	}
+	.table-responsive-principal th{
+		display: none;
+
+	}
+	.table-responsive-principal tr td{
+		position: relative;
+		padding-left: 80px;
+		text-align: left;
+		font-size: 70%;
+		border-top: 1px solid #DDDDDD;
+	}
+	.table-responsive-principal tr td::before{
+		content: attr(title) " : ";
+		color: #270000;
+		font-style: bold;
+		left: 5px;
+		position: absolute;
+		
+	}
+}

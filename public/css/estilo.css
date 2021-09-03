@@ -1,0 +1,65 @@
+.menulist{
+	color:#fff;
+}
+.menu{
+	background-color:#028fcc;
+}
+.list{
+	width:12.5%;
+	height: 148px;
+}
+.menu-nav{
+  	background-color: rgba(0,0,0,.2);
+}
+.service-nav{
+	border-radius: 4px;
+  	color: #fff;
+  	display: inline-block;
+  	font-size: 36px;
+  	height: 90px;
+  	line-height: 90px;
+  	width: 90px;  
+    -webkit-transition: background-color 0.2s ease;
+  	transition: background-color 0.2s ease;
+}
+.contplanes{
+	padding-top:25px;
+}
+.botones{
+	padding-top: 45px;
+	padding-bottom: 25px;
+}
+.nuestrosPlanes{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	display: none;
+}
+
+.plan{
+	text-align: justify;
+}
+
+.desc{
+	text-align: left;
+}
+
+#contentS{
+	padding-top: 25px;
+}
+
+.modalboton{
+	border-radius: 5px;
+}
+
+.limites{
+	height: 47px;
+}
+.ayudas{
+	background-color: #028fcc;
+}
+.ayudas > li > a{
+	background-color: #028fcc;
+	color:white;
+}
+

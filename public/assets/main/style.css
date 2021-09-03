@@ -1,0 +1,114 @@
+/*fondos*/
+
+.bg-login{
+
+	background-image: url('https://www.stratecsa.com/images/fotomural-circulacion-nocturna-compressed.jpg');
+
+	background-size: cover;
+
+	background-position: center !important;
+
+    background-repeat: no-repeat;
+
+    height:79rem;
+
+}
+
+
+
+.bg-white{
+
+    background-color:white;
+
+}
+
+
+
+
+
+/*Colores y letra*/
+
+.text--gris{
+
+    color:gray;
+
+}
+
+.text--bold{
+
+    font-weight:bold;
+
+}
+
+
+
+.text--lg{
+
+    font-size:2rem;
+
+}
+
+
+
+
+
+/*margin*/
+
+
+
+.mt-1{
+
+    margin-top:.5rem !important;
+
+}
+
+
+
+
+#logo{
+
+    margin-top:10rem !important;
+
+}
+
+
+
+#central-container{
+
+    border:0px solid transparent;
+
+    background-color:transparent;
+
+}
+
+
+
+a.small{
+
+    color:#009eda;
+
+}
+
+.d-block{
+
+    display:block !important;
+
+}
+
+
+
+input[type=text], input[type=password], input[type=email], textarea, select, #editor{
+
+    font-size:2rem;
+
+    margin-bottom:1rem !important;
+
+}
+
+
+@media screen and (max-width: 980px) {
+.bg-login{  
+
+ display:none;
+}
+}

@@ -1,0 +1,69 @@
+[06-Apr-2016 14:52:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /home/stra/public_html/listado/controller/conectar.php:6
+Stack trace:
+#0 /home/stra/public_html/listado/controller/conectar.php(6): PDO->__construct('mysql:host=127....', 'stra_gustavo', 'EJ!b]+D*5TVt')
+#1 /home/stra/public_html/listado/controller/consulta_person.php(4): Conectar->__construct()
+#2 {main}
+  thrown in /home/stra/public_html/listado/controller/conectar.php on line 6
+[06-Apr-2016 14:52:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /home/stra/public_html/listado/controller/conectar.php:6
+Stack trace:
+#0 /home/stra/public_html/listado/controller/conectar.php(6): PDO->__construct('mysql:host=127....', 'stra_gustavo', 'EJ!b]+D*5TVt')
+#1 /home/stra/public_html/listado/controller/consulta_person.php(4): Conectar->__construct()
+#2 {main}
+  thrown in /home/stra/public_html/listado/controller/conectar.php on line 6
+[06-Apr-2016 14:54:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /home/stra/public_html/listado/controller/conectar.php:6
+Stack trace:
+#0 /home/stra/public_html/listado/controller/conectar.php(6): PDO->__construct('mysql:host=127....', 'stra_gustavo', 'EJ!b]+D*5TVt')
+#1 /home/stra/public_html/listado/controller/consulta_person.php(4): Conectar->__construct()
+#2 {main}
+  thrown in /home/stra/public_html/listado/controller/conectar.php on line 6
+[06-Apr-2016 14:55:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'stra_usuario'@'localhost' (using password: YES)' in /home/stra/public_html/listado/controller/conectar.php:6
+Stack trace:
+#0 /home/stra/public_html/listado/controller/conectar.php(6): PDO->__construct('mysql:host=127....', 'stra_usuario', 'V(JH}aaI4n,w')
+#1 /home/stra/public_html/listado/controller/consulta_person.php(4): Conectar->__construct()
+#2 {main}
+  thrown in /home/stra/public_html/listado/controller/conectar.php on line 6
+[06-Apr-2016 14:56:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'stra_usuario'@'localhost' (using password: YES)' in /home/stra/public_html/listado/controller/conectar.php:6
+Stack trace:
+#0 /home/stra/public_html/listado/controller/conectar.php(6): PDO->__construct('mysql:host=127....', 'stra_usuario', 'V(JH}aaI4n,w')
+#1 /home/stra/public_html/listado/controller/consulta_person.php(4): Conectar->__construct()
+#2 {main}
+  thrown in /home/stra/public_html/listado/controller/conectar.php on line 6
+[06-Apr-2016 15:00:02 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 15:02:10 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 15:06:16 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 12
+[06-Apr-2016 15:06:55 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 15:09:31 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 15:13:20 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 15:14:34 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 15:16:10 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 15:21:48 UTC] PHP Warning:  Missing argument 1 for Conectar::__construct(), called in /home/stra/public_html/listado/controller/consulta_person.php on line 4 and defined in /home/stra/public_html/listado/controller/conectar.php on line 18
+[06-Apr-2016 15:21:48 UTC] PHP Warning:  Missing argument 2 for Conectar::__construct(), called in /home/stra/public_html/listado/controller/consulta_person.php on line 4 and defined in /home/stra/public_html/listado/controller/conectar.php on line 18
+[06-Apr-2016 15:21:48 UTC] PHP Fatal error:  Class 'mysqli' not found in /home/stra/public_html/listado/controller/conectar.php on line 26
+[06-Apr-2016 15:22:30 UTC] PHP Fatal error:  Class 'mysqli' not found in /home/stra/public_html/listado/controller/conectar.php on line 26
+[06-Apr-2016 15:27:36 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 16:02:44 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 16:06:08 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:07:49 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:08:16 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:14:01 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:17:36 UTC] PHP Fatal error:  Call to undefined method PDO::execute() in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 16:18:47 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:19:29 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:20:17 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:21:23 UTC] PHP Fatal error:  Call to undefined method PDO::execute() in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 16:29:46 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 16
+[06-Apr-2016 16:31:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /home/stra/public_html/listado/controller/conectar.php:6
+Stack trace:
+#0 /home/stra/public_html/listado/controller/conectar.php(6): PDO->__construct('mysql:host=127....', 'root', '')
+#1 /home/stra/public_html/listado/controller/consulta_person.php(4): Conectar->__construct()
+#2 {main}
+  thrown in /home/stra/public_html/listado/controller/conectar.php on line 6
+[06-Apr-2016 16:46:21 UTC] PHP Fatal error:  Call to a member function fetchColumn() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:47:14 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 14
+[06-Apr-2016 16:49:57 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 15
+[06-Apr-2016 16:57:35 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 17:01:56 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 17:02:41 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 17:04:50 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 17:06:01 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/stra/public_html/listado/controller/conectar.php on line 13
+[06-Apr-2016 20:04:58 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/stra/public_html/listado/controller/register_user.php on line 3
